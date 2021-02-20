@@ -1,9 +1,10 @@
 
+                                        /*Annexe*/
+
 *
 {
     font-family: Raleway, Georgia, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
 }
-                                                   /*ANNEXE*/
 
 strong
 {
@@ -20,7 +21,9 @@ i
     color: #0065FC;
 }
 
-img:not(.nohover):hover
+img:not(.nohover):hover,
+img:not(.nohover):active,
+img:not(.nohover):focus,
 {
     box-shadow: 2px 4px grey;       
 }
@@ -39,7 +42,7 @@ a
 }
 
 
-                     /*RECHERCHES ET NAVIGATIONS*/
+                                  /*RECHERCHES ET NAVIGATIONS*/
 
 nav ul
 {                                 
@@ -57,12 +60,16 @@ nav ul :nth-child(1)
     flex: 1;
 }
 
-nav ul :nth-child(2):hover
+nav ul :nth-child(2):hover,
+nav ul :nth-child(2):active,
+nav ul :nth-child(2):focus
 {
     border-top: 2px #0065FC solid;
 }
 
-nav ul :nth-child(3):hover
+nav ul :nth-child(3):hover,
+nav ul :nth-child(3):active,
+nav ul :nth-child(3):focus
 {
     border-top: 2px #0065FC solid;
 }
@@ -79,7 +86,9 @@ nav li:not(:first-child)
     text-align: center;
 }
 
-.overline:not(#inscrire):hover
+.overline:not(#inscrire):hover,
+.overline:not(#inscrire):active,
+.overline:not(#inscrire):focus
 {                      
     color: #0065FC;
 }
@@ -90,12 +99,14 @@ nav li:not(:first-child)
     font-weight: bold;
 } 
 
-#inscrire:hover
+#inscrire:hover,
+#inscrire:focus,
+#inscrire:active
 {
     color: blue;
 }
 
-                                            /*h1 "Trouvez votre hébergement pour..."*/
+                             /*h1 "Trouvez votre hébergement pour..."*/
 
 h1
 {                                       
@@ -106,10 +117,11 @@ h1
     font-weight: bold;
 }
 
-                                            /*p "En plein centre ville ou..."*/
+                             /*p "En plein centre ville ou..."*/
 
 header
 {
+    width: 95%;
     margin-left: 4%;
 }
 
@@ -120,7 +132,7 @@ header p
     font-size: 0.75em;
 }
 
-                                            /*Dimension & comportement conteneur formulaire*/
+                                        /*formulaire*/
 
 form
 {                                       
@@ -132,7 +144,7 @@ form
     align-items: center;
 }
 
-                                            /*conteneur icone geolocalisation*/
+                                 /*conteneur icone geolocalisation*/
 form label
 {    
     display: flex;
@@ -149,7 +161,7 @@ form label i
     color: black;
     font-size: 14px;
 }
-                                            /*champs de recherche*/
+                                      /*champs de recherche*/
 form :nth-child(2)
 {                         
     border-top: 1px solid #f2f2f2;
@@ -163,7 +175,7 @@ form :nth-child(2)
     padding-left: 3%;
     color: black;
 }
-                                            /*bouton de recherche*/
+                                      /*bouton de recherche*/
 .form_submit
 {                         
     background-color: #0065FC;
@@ -176,7 +188,9 @@ form :nth-child(2)
     font-weight: bold;
 }
 
-.form_submit:hover
+.form_submit:hover,
+.form_submit:active,
+.form_submit:focus
 {
     background-color: blue;
 }
@@ -186,12 +200,7 @@ form :nth-child(2)
     display: none;
 }
 
-/* .form2
-{
-    display: none;
-} */
-
-                                            /*Dimension & comportement conteneur filtres*/
+                                       /*Conteneur filtres*/
 .filters
 {                                  
     display: flex;
@@ -220,18 +229,20 @@ form :nth-child(2)
     padding-left: 5%;
 }
         
-.filters li:not(:first-child):hover
+.filters li:not(:first-child):hover,
+.filters li:not(:first-child):active,
+.filters li:not(:first-child):focus
 {
     background-color: #deebff;       
 }
-                                        /*Titre "filtre"*/
+                                        
 .filters li:nth-child(1)
 {               
     border: none;
     padding: 0;
     width: 50px;
 }
-                                        /*taille filtres*/
+                                        
 .filters li:nth-child(2)
 {            
     width: 134px;
@@ -251,7 +262,7 @@ form :nth-child(2)
 {
     width: 174px;
 }
-                                        /*taille et position icone filtres*/
+                                   
 .filters i
 { 
     display: flex;
@@ -265,7 +276,8 @@ form :nth-child(2)
     font-size: 16px;
 }
 
-.filters + p{
+.filters + p
+{
     max-width: 335px;
     display: flex;
     align-items: center;
@@ -273,7 +285,8 @@ form :nth-child(2)
 }
 
                                 /*icone INFO*/
-p i:not(.block i){
+p i:not(.block i)
+{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -288,45 +301,17 @@ p i:not(.block i){
                                        /*HEBERGEMENTS*/
 
                                 /*Flexbox sur "hébergements et populaires"*/    
-.block{
+.block
+{
     display: flex; 
     margin-top: 2%;
     margin-left: 4%;                 
 }
 
-section h3{
-    font-weight: bold;
-    font-size: 1em;
-    margin: 0;
-    margin-left: 5%;
-    margin-top: 3%;
-    width: 100%;
-}
-
-section h4{                         
-    margin: 0;
-    font-weight: bold;
-    font-size: 0.8em;
-    margin-left: 5%;
-    margin-top: 1%;
-}
-
-section p{
-    font-size: 0.6em;                  
-    padding-left: 5%;
-    padding-top: 2%;
-    margin: 0;
-}
-
-#stars{
-    font-size: 0.55em;
-    padding-left: 5%;
-    padding-top: 3%;
-}
-
-section{                           
-    width: 35vw;
-    height: 50vh;
+section
+{                           
+    width: 650px;
+    height: 485px;
     background-color: #f2f2f2;
     border-radius: 20px;
     display: flex;
@@ -336,8 +321,58 @@ section{
     margin-right: 3%;
 }
 
+section h3
+{
+    font-weight: bold;
+    font-size: 1em;
+    margin: 0;
+    margin-left: 5%;
+    margin-top: 3%;
+    width: 100%;
+}
+
+section h4
+{                         
+    margin: 0;
+    font-weight: bold;
+    font-size: 0.8em;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+
+section p
+{
+    font-size: 0.6em;                  
+    padding-left: 5%;
+    padding-top: 2%;
+    margin: 0;
+}
+
+#stars
+{
+    font-size: 0.55em;
+    padding-left: 5%;
+    padding-top: 3%;
+}
+
+.ele1 i:last-child, .ele3 i:last-child, .ele5 i:last-child
+{
+    color: #f2f2F2;
+}
+
+.ele4 i:nth-child(4)
+{
+    color: #f2f2f2;
+}
+
+.ele4 i:last-child
+{
+    color: #f2f2f2;
+}
+
                                     /*conteneurs cases, images et descriptions*/
-.ele1, .ele2, .ele3 {             
+.ele1, .ele2, .ele3
+{             
     width: 180px;
     height:145px;
     border: 4px solid white;
@@ -347,15 +382,18 @@ section{
     padding: 0;
 }
 
-.ele1, .ele4{
+.ele1, .ele4
+{
     margin-left: 3%;
 }
 
-.ele3, .ele6{
+.ele3, .ele6
+{
     margin-right: 3%;
 }
 
-.ele4, .ele5, .ele6 {
+.ele4, .ele5, .ele6
+{
     width: 180px;
     height: 145px;
     border: 4px solid white;
@@ -363,7 +401,8 @@ section{
     background-color: white;
 }
 
-.afficher{
+.afficher
+{
     font-size: 0.85em;
     width: 100%;
     height: 1em;
@@ -373,16 +412,18 @@ section{
     padding: 0;
 }
 
-section img{
+section img
+{
     width: 100%;
     height: 90px;
     border-radius: 12px 12px 0px 0px;
 }
 
                                                 /*POPULAIRES*/                                                    
-aside{                             
-    width: 17vw;
-    height: 50vh;
+aside
+{                             
+    width: 325px;
+    height: 485px;
     background-color: #f2f2f2;
     border-radius: 1em;
     display: flex;
@@ -445,17 +486,15 @@ aside a
 
 aside h4
 {
+    width: 135px;
     font-size: 0.8em;
     margin: 0;
-    padding: 0;
     padding-top: 1%;
-    margin-right: 9%;
 }
 
 aside p
 {
     font-size: 0.7em;
-    margin-right: 9%;
     margin: 0;
     padding: 0;
     padding-bottom: 10%;
@@ -467,12 +506,17 @@ aside p
     padding-bottom: 1%;
 }
 
+.ele8 i:last-child, .ele9 i:last-child
+{
+    color: #f2f2F2;
+}
+
                                         /*ACTIVITES*/
 
 .last
 {                      
-    width: 55.6vw;
-    height: 45vh;
+    width: 1037px;
+    height: 430px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -599,8 +643,8 @@ footer
 {
     margin: auto;
     margin-bottom: 2%;
-    width: 58vw;                     
-    height: 16.5vh;
+    width: 1080px;                     
+    height: 160px;
     background-color: #f2f2F2;
     display: flex;
     justify-content: flex-start;
@@ -620,7 +664,7 @@ footer ul
     padding: 0;
     width: 300px;
     height: 130px;
-    margin-left: 4%; 
+    margin-left: 3.8%; 
 }
 
 footer li
@@ -629,13 +673,18 @@ footer li
 }
 
 
-                            /*@MEDIA*/
+                            /*@MEDIA Telephone*/
 
-@media all and (max-width: 599px) and (orientation: portrait)
+@media all and (max-device-width: 414px)
 {
+    body
+    {
+        margin: 0;
+    }
+
     #blockpage
     {
-        width: auto;
+        max-width: 414px;
         margin: 0;
         padding: 0;
     } 
@@ -650,13 +699,18 @@ footer li
         margin: 0;
     }
 
+    nav
+    {
+        width: 100%;
+    }
+
     nav ul
     {
         justify-content: space-around;
         padding: 0;
         width: 260px;
+        height: 100%;
         margin: auto;
-        height: 15vh;
         flex-wrap: wrap;
         border-bottom: 2px #f2f2f2 solid;
     }
@@ -679,7 +733,9 @@ footer li
         padding-left: 0;
     }
 
-    nav ul :nth-child(2):hover
+    nav ul :nth-child(2):hover,
+    nav ul :nth-child(2):active,
+    nav ul :nth-child(2):focus
     {
         border-top: none;
         border-bottom: 2px #0065FC solid;
@@ -695,7 +751,9 @@ footer li
         padding-left: 0;
     }
 
-    nav ul :nth-child(3):hover
+    nav ul :nth-child(3):hover,
+    nav ul :nth-child(3):active,
+    nav ul :nth-child(3):focus
     {
         border-top: none;
         border-bottom: 2px #0065FC solid;
@@ -711,7 +769,9 @@ footer li
         text-align: end;
     }
 
-    .overline:not(#inscrire):hover
+    .overline:not(#inscrire):hover,
+    .overline:not(#inscrire):active,
+    .overline:not(#inscrire):focus
     {           
         color: #0065FC;
     } 
@@ -735,11 +795,6 @@ footer li
     {
         padding-right: 3px;
     }
-
-    /* .form1
-    {
-        display: none;
-    } */
 
     form
     {
@@ -786,6 +841,7 @@ footer li
         align-items: center;
         font-size: 1em;
         padding: 2px;
+        margin-top: 10px;
     }
 
     .filters
@@ -797,7 +853,6 @@ footer li
         margin: auto;
         padding-top: 6%;
         padding-left: 5%;
-
     }
 
     .filters li
@@ -854,8 +909,8 @@ footer li
 
     section
     {
-        width: 100%;
-        height: 165vh;
+        width: 80%;
+        height: 1100px;
         background-color: white;
         margin: 0;
     }
@@ -883,8 +938,8 @@ footer li
     
     aside
     {
-        height: 70vh;
-        width: 300px;
+        height: 500px;
+        width: 80%;
         border-radius: 0px;
     }
 
@@ -898,10 +953,10 @@ footer li
     {
         flex-wrap: nowrap;
         align-items: center;
-        width: 100%;
-        height: 155vh;
+        width: 80%;
+        height: 1020px;
         margin-bottom: 12%;
-        margin-left: 0;
+        margin: auto;
     }
 
     .last h3
@@ -936,9 +991,10 @@ footer li
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        height: 54vh;
-        width: 300px;
+        height: 400px;
+        width: 80%;
         padding-top: 25px;
+        margin-top: 10%;
     }
 
     footer ul
@@ -949,15 +1005,22 @@ footer li
    
     footer :nth-child(3)
     {
-    margin-right: 0;
+        margin-right: 0;
     }
 
 }
 
                              /*@media tablette*/
 
-@media all and (min-width: 600px) and (max-width: 1024px)
+@media only screen and (min-device-width: 600px) and (max-device-width: 1024px)
 {
+    #blockpage
+    {
+        min-width: 600px;
+        max-width: 1024px;
+        padding-left: 25vw;
+    }
+
     HTML
     {
         overflow-x: hidden;
@@ -973,11 +1036,6 @@ footer li
         width: 90px;
     }
 
-    /* .form2
-    {
-        display: none;
-    }
-     */
     header
     {
         margin-left: 1%;
@@ -985,7 +1043,8 @@ footer li
 
     .filters
     {
-        width: 53%;
+        width: 54%;
+        flex-wrap: wrap;
     }
 
     .filters li strong
@@ -997,9 +1056,9 @@ footer li
     {               
         border: none;
         padding: 0;
-        width: 40px;
+        width: 100%;
     }
-                                        /*taille filtres*/
+                                       
     .filters li:nth-child(2)
     {            
         width: 125px;
