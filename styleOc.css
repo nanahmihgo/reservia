@@ -1,9 +1,10 @@
 
+                                        /*Annexe*/
+
 *
 {
     font-family: Raleway, Georgia, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
 }
-                                                   /*ANNEXE*/
 
 strong
 {
@@ -41,7 +42,7 @@ a
 }
 
 
-                     /*RECHERCHES ET NAVIGATIONS*/
+                                  /*RECHERCHES ET NAVIGATIONS*/
 
 nav ul
 {                                 
@@ -105,7 +106,7 @@ nav li:not(:first-child)
     color: blue;
 }
 
-                                            /*h1 "Trouvez votre hébergement pour..."*/
+                             /*h1 "Trouvez votre hébergement pour..."*/
 
 h1
 {                                       
@@ -116,7 +117,7 @@ h1
     font-weight: bold;
 }
 
-                                            /*p "En plein centre ville ou..."*/
+                             /*p "En plein centre ville ou..."*/
 
 header
 {
@@ -131,7 +132,7 @@ header p
     font-size: 0.75em;
 }
 
-                                            /*Dimension & comportement conteneur formulaire*/
+                                        /*formulaire*/
 
 form
 {                                       
@@ -143,7 +144,7 @@ form
     align-items: center;
 }
 
-                                            /*conteneur icone geolocalisation*/
+                                 /*conteneur icone geolocalisation*/
 form label
 {    
     display: flex;
@@ -160,7 +161,7 @@ form label i
     color: black;
     font-size: 14px;
 }
-                                            /*champs de recherche*/
+                                      /*champs de recherche*/
 form :nth-child(2)
 {                         
     border-top: 1px solid #f2f2f2;
@@ -174,7 +175,7 @@ form :nth-child(2)
     padding-left: 3%;
     color: black;
 }
-                                            /*bouton de recherche*/
+                                      /*bouton de recherche*/
 .form_submit
 {                         
     background-color: #0065FC;
@@ -199,7 +200,7 @@ form :nth-child(2)
     display: none;
 }
 
-                                            /*Dimension & comportement conteneur filtres*/
+                                       /*Conteneur filtres*/
 .filters
 {                                  
     display: flex;
@@ -234,14 +235,14 @@ form :nth-child(2)
 {
     background-color: #deebff;       
 }
-                                        /*Titre "filtre"*/
+                                        
 .filters li:nth-child(1)
 {               
     border: none;
     padding: 0;
     width: 50px;
 }
-                                        /*taille filtres*/
+                                        
 .filters li:nth-child(2)
 {            
     width: 134px;
@@ -261,7 +262,7 @@ form :nth-child(2)
 {
     width: 174px;
 }
-                                        /*taille et position icone filtres*/
+                                   
 .filters i
 { 
     display: flex;
@@ -674,7 +675,6 @@ footer li
 
                             /*@MEDIA Telephone*/
 
-/* @media (max-width: 414px) and (orientation: portrait) */
 @media all and (max-device-width: 414px)
 {
     body
@@ -1058,7 +1058,7 @@ footer li
         padding: 0;
         width: 100%;
     }
-                                        /*taille filtres*/
+                                       
     .filters li:nth-child(2)
     {            
         width: 125px;
