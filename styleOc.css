@@ -21,9 +21,7 @@ i
     color: #0065FC;
 }
 
-img:not(.nohover):hover,
-img:not(.nohover):active,
-img:not(.nohover):focus,
+img:not(.nohover):hover
 {
     box-shadow: 2px 4px grey;       
 }
